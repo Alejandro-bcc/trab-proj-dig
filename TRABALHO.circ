@@ -56,30 +56,19 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(350,230)" name="Clock"/>
-    <comp lib="0" loc="(470,210)" name="Pin">
+    <comp lib="0" loc="(470,430)" name="Pin">
       <a name="appearance" val="NewPins"/>
+      <a name="width" val="16"/>
     </comp>
-    <comp lib="0" loc="(470,250)" name="Pin">
+    <comp lib="0" loc="(690,430)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="radix" val="16"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(470,270)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(470,290)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(470,310)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="width" val="4"/>
-    </comp>
     <comp loc="(690,210)" name="Banco_de_registradores"/>
+    <comp loc="(690,430)" name="Extensor_sinal"/>
     <comp loc="(940,220)" name="ULA"/>
-    <wire from="(350,230)" to="(470,230)"/>
     <wire from="(690,210)" to="(900,210)"/>
   </circuit>
   <circuit name="Registrador_32_bits">
@@ -780,10 +769,40 @@
     <wire from="(370,950)" to="(390,950)"/>
   </circuit>
   <circuit name="Banco_de_registradores">
-    <a name="appearance" val="logisim_evolution"/>
+    <a name="appearance" val="custom"/>
     <a name="circuit" val="Banco_de_registradores"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect height="3" stroke="none" width="10" x="50" y="59"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="136" y="61">W</text>
+      <rect height="3" stroke="none" width="10" x="50" y="79"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="163">CLK</text>
+      <rect height="4" stroke="none" width="10" x="50" y="98"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="125">C</text>
+      <rect height="4" stroke="none" width="10" x="50" y="118"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="103">W_end</text>
+      <rect height="12" stroke="none" width="3" x="138" y="39"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="81">B_end</text>
+      <rect height="4" stroke="none" width="10" x="50" y="158"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="64" y="63">A_end</text>
+      <rect height="4" stroke="none" width="10" x="260" y="58"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="255" y="64">A</text>
+      <rect height="4" stroke="none" width="10" x="260" y="78"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="255" y="84">B</text>
+      <rect height="20" stroke="none" width="200" x="60" y="170"/>
+      <rect fill="none" height="140" stroke="#000000" stroke-width="2" width="200" x="60" y="50"/>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="160" y="184">Banco_de_registradores</text>
+      <circ-anchor facing="east" x="270" y="60"/>
+      <circ-port dir="in" pin="1060,2130" x="50" y="80"/>
+      <circ-port dir="in" pin="1120,2130" x="50" y="60"/>
+      <circ-port dir="in" pin="150,1770" x="140" y="40"/>
+      <circ-port dir="in" pin="200,1980" x="50" y="100"/>
+      <circ-port dir="in" pin="400,1930" x="50" y="120"/>
+      <circ-port dir="in" pin="450,1800" x="50" y="160"/>
+      <circ-port dir="out" pin="1150,1770" x="270" y="60"/>
+      <circ-port dir="out" pin="1150,2000" x="270" y="80"/>
+    </appear>
     <comp lib="0" loc="(1060,2130)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="north"/>
@@ -3105,5 +3124,53 @@
     <wire from="(960,200)" to="(990,200)"/>
     <wire from="(990,200)" to="(1040,200)"/>
     <wire from="(990,90)" to="(990,200)"/>
+  </circuit>
+  <circuit name="Extensor_sinal">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Extensor_sinal"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(340,330)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Imm"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(370,330)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+    </comp>
+    <comp lib="0" loc="(410,330)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="S"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(410,330)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="32"/>
+      <a name="incoming" val="32"/>
+    </comp>
+    <wire from="(340,330)" to="(370,330)"/>
+    <wire from="(390,490)" to="(390,500)"/>
+    <wire from="(390,500)" to="(390,510)"/>
+    <wire from="(390,510)" to="(390,520)"/>
+    <wire from="(390,520)" to="(390,530)"/>
+    <wire from="(390,530)" to="(390,540)"/>
+    <wire from="(390,540)" to="(390,550)"/>
+    <wire from="(390,550)" to="(390,560)"/>
+    <wire from="(390,560)" to="(390,570)"/>
+    <wire from="(390,570)" to="(390,580)"/>
+    <wire from="(390,580)" to="(390,590)"/>
+    <wire from="(390,590)" to="(390,600)"/>
+    <wire from="(390,600)" to="(390,610)"/>
+    <wire from="(390,610)" to="(390,620)"/>
+    <wire from="(390,620)" to="(390,630)"/>
+    <wire from="(390,630)" to="(390,640)"/>
+    <wire from="(390,640)" to="(390,650)"/>
+    <wire from="(390,640)" to="(400,640)"/>
   </circuit>
 </project>
