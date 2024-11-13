@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.9.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
@@ -77,22 +77,11 @@
       <a name="appearance" val="NewPins"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(690,210)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="radix" val="16"/>
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(690,230)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="radix" val="16"/>
-      <a name="width" val="32"/>
-    </comp>
     <comp loc="(690,210)" name="Banco_de_registradores"/>
+    <comp loc="(930,220)" name="ULA"/>
     <wire from="(350,230)" to="(470,230)"/>
+    <wire from="(690,210)" to="(890,210)"/>
+    <wire from="(980,220)" to="(990,220)"/>
   </circuit>
   <circuit name="Registrador_32_bits">
     <a name="appearance" val="logisim_evolution"/>
@@ -1097,13 +1086,13 @@
     <a name="simulationFrequency" val="1.0"/>
     <appear>
       <rect height="3" stroke="none" width="10" x="50" y="59"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="64">A</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="64">A</text>
       <rect height="3" stroke="none" width="10" x="50" y="79"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="84">B</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="124" y="46">C_in</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="84">B</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="124" y="46">C_in</text>
       <rect height="3" stroke="none" width="10" x="179" y="59"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="176" y="65">S</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="164" y="161">C_out</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="176" y="65">S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="164" y="161">C_out</text>
       <rect height="36" stroke="none" width="119" x="60" y="112"/>
       <rect fill="none" height="99" stroke="#000000" stroke-width="2" width="120" x="59" y="49"/>
       <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="117" y="123">Full adder</text>
@@ -1178,32 +1167,32 @@
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="144" y="55">C_in</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="196" y="74">S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="144" y="55">C_in</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="196" y="74">S</text>
       <rect height="3" stroke="none" width="10" x="199" y="68"/>
       <polyline fill="none" points="140,35 140,56" stroke="#000000" stroke-width="3"/>
       <rect height="3" stroke="none" width="10" x="70" y="68"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="85" y="73">A</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="85" y="73">A</text>
       <rect height="3" stroke="none" width="10" x="70" y="88"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="184" y="170">C_out</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="184" y="170">C_out</text>
       <rect fill="none" height="99" stroke="#000000" stroke-width="2" width="120" x="79" y="58"/>
       <rect height="36" stroke="none" width="119" x="80" y="121"/>
       <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="137" y="132">Full adder</text>
       <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="137" y="148">8 bits</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="85" y="93">B</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="85" y="93">B</text>
       <polyline fill="none" points="140,170 140,154" stroke="#000000" stroke-width="3"/>
       <rect height="3" stroke="none" width="10" x="199" y="68"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="85" y="73">A</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="196" y="74">S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="85" y="73">A</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="196" y="74">S</text>
       <rect height="3" stroke="none" width="10" x="70" y="68"/>
       <rect height="3" stroke="none" width="10" x="70" y="88"/>
       <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="137" y="132">Full adder</text>
       <rect fill="none" height="99" stroke="#000000" stroke-width="2" width="120" x="79" y="58"/>
       <rect height="36" stroke="none" width="119" x="80" y="121"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="85" y="93">B</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="184" y="170">C_out</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="85" y="93">B</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="184" y="170">C_out</text>
       <polyline fill="none" points="140,35 140,56" stroke="#000000" stroke-width="3"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="144" y="55">C_in</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="144" y="55">C_in</text>
       <polyline fill="none" points="140,170 140,154" stroke="#000000" stroke-width="3"/>
       <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="137" y="148">8 bits</text>
       <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="138" y="133">Full adder</text>
@@ -1345,17 +1334,17 @@
     <a name="simulationFrequency" val="1.0"/>
     <appear>
       <rect height="3" stroke="none" width="10" x="199" y="68"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="85" y="73">A</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="196" y="74">S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="85" y="73">A</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="196" y="74">S</text>
       <rect height="3" stroke="none" width="10" x="70" y="68"/>
       <rect height="3" stroke="none" width="10" x="70" y="88"/>
-      <text dominant-baseline="central" fill="#ffffff" fill-opacity="0.000" font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="137" y="132">aaaaaaaaaaaaaaafaaaaaaaaaaaaaaaader</text>
+      <text dominant-baseline="central" fill="#ffffff" fill-opacity="0,000" font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="137" y="132">aaaaaaaaaaaaaaafaaaaaaaaaaaaaaaader</text>
       <rect fill="none" height="99" stroke="#000000" stroke-width="2" width="120" x="79" y="58"/>
       <rect height="36" stroke="none" width="119" x="80" y="122"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="85" y="93">B</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="204" y="170">overflow</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="85" y="93">B</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="204" y="170">overflow</text>
       <polyline fill="none" points="140,35 140,56" stroke="#000000" stroke-width="3"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="144" y="55">C_in</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="144" y="55">C_in</text>
       <polyline fill="none" points="140,170 140,154" stroke="#000000" stroke-width="3"/>
       <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="137" y="148">32 bits</text>
       <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="137" y="132">Full adder</text>
@@ -1553,13 +1542,13 @@
     <a name="simulationFrequency" val="1.0"/>
     <appear>
       <rect height="4" stroke="none" width="10" x="50" y="58"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="64">A</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="108" y="123">shift</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="64">A</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="108" y="123">shift</text>
       <rect height="4" stroke="none" width="12" x="180" y="58"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="175" y="64">S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="175" y="64">S</text>
       <rect height="17" stroke="none" width="121" x="60" y="93"/>
       <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="120" x="60" y="50"/>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_1_bit</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_1_bit</text>
       <polyline fill="none" points="100,120 100,111" stroke="#000000" stroke-width="3"/>
       <circ-anchor facing="east" x="100" y="80"/>
       <circ-port dir="in" pin="190,110" x="50" y="60"/>
@@ -1799,16 +1788,16 @@
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="175" y="64">S</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="64">A</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="108" y="123">shift</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="175" y="64">S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="64">A</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="108" y="123">shift</text>
       <polyline fill="none" points="100,120 100,111" stroke="#000000" stroke-width="3"/>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
       <rect height="4" stroke="none" width="12" x="180" y="58"/>
       <rect height="4" stroke="none" width="10" x="50" y="58"/>
       <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="120" x="60" y="50"/>
       <rect height="17" stroke="none" width="121" x="60" y="93"/>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
       <circ-anchor facing="east" x="100" y="80"/>
       <circ-port dir="in" pin="190,110" x="50" y="60"/>
       <circ-port dir="in" pin="570,1730" x="100" y="120"/>
@@ -1845,7 +1834,6 @@
       <a name="facing" val="west"/>
       <a name="label" val="S"/>
       <a name="output" val="true"/>
-      <a name="radix" val="16"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="2" loc="(590,1030)" name="Multiplexer"/>
@@ -2047,16 +2035,16 @@
     <a name="simulationFrequency" val="1.0"/>
     <appear>
       <rect height="4" stroke="none" width="12" x="180" y="58"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="108" y="123">shift</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="108" y="123">shift</text>
       <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="120" x="60" y="50"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="64">A</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="64">A</text>
       <rect height="4" stroke="none" width="10" x="50" y="58"/>
       <polyline fill="none" points="100,120 100,111" stroke="#000000" stroke-width="3"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="175" y="64">S</text>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="175" y="64">S</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
       <rect height="17" stroke="none" width="121" x="60" y="93"/>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="106">Shifter_4_bit</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="106">Shifter_4_bit</text>
       <circ-anchor facing="east" x="100" y="80"/>
       <circ-port dir="in" pin="190,110" x="50" y="60"/>
       <circ-port dir="in" pin="570,1730" x="100" y="120"/>
@@ -2093,7 +2081,6 @@
       <a name="facing" val="west"/>
       <a name="label" val="S"/>
       <a name="output" val="true"/>
-      <a name="radix" val="16"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="2" loc="(590,1030)" name="Multiplexer"/>
@@ -2293,21 +2280,21 @@
     <a name="simulationFrequency" val="1.0"/>
     <appear>
       <rect height="4" stroke="none" width="12" x="180" y="58"/>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="108" y="123">shift</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="64">A</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="108" y="123">shift</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="64">A</text>
       <polyline fill="none" points="100,120 100,111" stroke="#000000" stroke-width="3"/>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="106">Shifter_4_bit</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="106">Shifter_4_bit</text>
       <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="120" x="60" y="50"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="175" y="64">S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="175" y="64">S</text>
       <rect height="4" stroke="none" width="10" x="50" y="58"/>
       <rect height="17" stroke="none" width="121" x="60" y="93"/>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="119" y="106">Shifter_8_bit</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="119" y="106">Shifter_8_bit</text>
       <circ-anchor facing="east" x="100" y="80"/>
       <circ-port dir="in" pin="190,110" x="50" y="60"/>
       <circ-port dir="in" pin="570,1730" x="100" y="120"/>
-      <circ-port dir="out" pin="620,120" x="190" y="60"/>
+      <circ-port dir="out" pin="670,120" x="190" y="60"/>
     </appear>
     <comp lib="0" loc="(190,110)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -2335,12 +2322,11 @@
       <a name="incoming" val="32"/>
       <a name="spacing" val="5"/>
     </comp>
-    <comp lib="0" loc="(620,120)" name="Pin">
+    <comp lib="0" loc="(670,120)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="S"/>
       <a name="output" val="true"/>
-      <a name="radix" val="16"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="2" loc="(590,1030)" name="Multiplexer"/>
@@ -2527,7 +2513,7 @@
     <wire from="(570,850)" to="(570,900)"/>
     <wire from="(570,900)" to="(570,950)"/>
     <wire from="(570,950)" to="(570,1000)"/>
-    <wire from="(610,120)" to="(620,120)"/>
+    <wire from="(610,120)" to="(670,120)"/>
   </circuit>
   <circuit name="Shifter_16_bits">
     <a name="appearance" val="custom"/>
@@ -2535,22 +2521,22 @@
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="108" y="123">shift</text>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="108" y="123">shift</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
       <rect height="4" stroke="none" width="10" x="50" y="58"/>
       <rect height="17" stroke="none" width="121" x="60" y="93"/>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_16_bit</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_16_bit</text>
       <rect height="4" stroke="none" width="12" x="180" y="58"/>
       <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="120" x="60" y="50"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="64">A</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="175" y="64">S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="64">A</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="175" y="64">S</text>
       <polyline fill="none" points="100,120 100,111" stroke="#000000" stroke-width="3"/>
       <circ-anchor facing="east" x="100" y="80"/>
-      <circ-port dir="in" pin="190,110" x="50" y="60"/>
+      <circ-port dir="in" pin="180,110" x="50" y="60"/>
       <circ-port dir="in" pin="570,1730" x="100" y="120"/>
       <circ-port dir="out" pin="620,120" x="190" y="60"/>
     </appear>
-    <comp lib="0" loc="(190,110)" name="Pin">
+    <comp lib="0" loc="(180,110)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="A"/>
       <a name="radix" val="16"/>
@@ -2581,7 +2567,6 @@
       <a name="facing" val="west"/>
       <a name="label" val="S"/>
       <a name="output" val="true"/>
-      <a name="radix" val="16"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="2" loc="(590,1030)" name="Multiplexer"/>
@@ -2616,6 +2601,7 @@
     <comp lib="2" loc="(590,880)" name="Multiplexer"/>
     <comp lib="2" loc="(590,930)" name="Multiplexer"/>
     <comp lib="2" loc="(590,980)" name="Multiplexer"/>
+    <wire from="(180,110)" to="(190,110)"/>
     <wire from="(210,1020)" to="(560,1020)"/>
     <wire from="(210,1070)" to="(560,1070)"/>
     <wire from="(210,1120)" to="(560,1120)"/>
@@ -2771,28 +2757,27 @@
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="108" y="123">shift</text>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_16_bit</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="64">A</text>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="175" y="64">S</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="108" y="123">shift</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_16_bit</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="64">A</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="175" y="64">S</text>
       <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="120" x="60" y="50"/>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="105">Shifter_2_bit</text>
       <rect height="4" stroke="none" width="12" x="180" y="58"/>
       <polyline fill="none" points="100,120 100,111" stroke="#000000" stroke-width="3"/>
       <rect height="4" stroke="none" width="10" x="50" y="58"/>
       <rect height="17" stroke="none" width="121" x="60" y="93"/>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="106">Shifter_32_bit</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="120" y="106">Shifter_32_bit</text>
       <circ-anchor facing="east" x="100" y="80"/>
       <circ-port dir="in" pin="320,170" x="50" y="60"/>
-      <circ-port dir="in" pin="670,370" x="100" y="120"/>
-      <circ-port dir="out" pin="1080,170" x="190" y="60"/>
+      <circ-port dir="in" pin="670,420" x="100" y="120"/>
+      <circ-port dir="out" pin="1100,170" x="190" y="60"/>
     </appear>
-    <comp lib="0" loc="(1080,170)" name="Pin">
+    <comp lib="0" loc="(1100,170)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="S"/>
       <a name="output" val="true"/>
-      <a name="radix" val="16"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(320,170)" name="Pin">
@@ -2801,23 +2786,27 @@
       <a name="radix" val="16"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(670,370)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="5"/>
-    </comp>
     <comp lib="0" loc="(670,370)" name="Splitter">
       <a name="appear" val="center"/>
+      <a name="bit0" val="4"/>
+      <a name="bit1" val="3"/>
+      <a name="bit3" val="1"/>
+      <a name="bit4" val="0"/>
       <a name="facing" val="north"/>
       <a name="fanout" val="5"/>
       <a name="incoming" val="5"/>
+    </comp>
+    <comp lib="0" loc="(670,420)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="5"/>
     </comp>
     <comp loc="(370,190)" name="Shifter_1_bit"/>
     <comp loc="(520,190)" name="Shifter_2_bits"/>
     <comp loc="(670,190)" name="Shifter_4_bits"/>
     <comp loc="(820,190)" name="Shifter_8_bits"/>
     <comp loc="(970,190)" name="Shifter_16_bits"/>
-    <wire from="(1060,170)" to="(1080,170)"/>
+    <wire from="(1060,170)" to="(1100,170)"/>
     <wire from="(370,230)" to="(370,350)"/>
     <wire from="(370,350)" to="(650,350)"/>
     <wire from="(460,170)" to="(470,170)"/>
@@ -2826,6 +2815,7 @@
     <wire from="(610,170)" to="(620,170)"/>
     <wire from="(660,340)" to="(660,350)"/>
     <wire from="(670,230)" to="(670,350)"/>
+    <wire from="(670,370)" to="(670,420)"/>
     <wire from="(680,340)" to="(680,350)"/>
     <wire from="(680,340)" to="(820,340)"/>
     <wire from="(690,350)" to="(970,350)"/>
@@ -2835,13 +2825,34 @@
     <wire from="(970,230)" to="(970,350)"/>
   </circuit>
   <circuit name="ULA">
-    <a name="appearance" val="logisim_evolution"/>
+    <a name="appearance" val="custom"/>
     <a name="circuit" val="ULA"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect height="4" stroke="none" width="10" x="70" y="48"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="85" y="54">A</text>
+      <rect height="4" stroke="none" width="10" x="71" y="118"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="84" y="125">B</text>
+      <rect height="15" stroke="none" width="5" x="118" y="148"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="104" y="138">Funct</text>
+      <rect height="3" stroke="none" width="10" x="151" y="58"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="148" y="64">ZERO</text>
+      <rect height="4" stroke="none" width="10" x="151" y="88"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="255" y="84"/>
+      <polyline fill="none" points="80,10 80,80 109,90 80,100 80,160 150,140 150,30 79,10" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="141" y="95">S</text>
+      <circ-anchor facing="east" x="110" y="60"/>
+      <circ-port dir="in" pin="110,140" x="70" y="50"/>
+      <circ-port dir="in" pin="110,190" x="70" y="120"/>
+      <circ-port dir="in" pin="940,390" x="120" y="160"/>
+      <circ-port dir="out" pin="1030,240" x="160" y="90"/>
+      <circ-port dir="out" pin="1060,170" x="160" y="60"/>
+    </appear>
     <comp lib="0" loc="(1030,240)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="S"/>
       <a name="output" val="true"/>
       <a name="radix" val="16"/>
       <a name="width" val="32"/>
@@ -2852,13 +2863,13 @@
       <a name="label" val="ZERO"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(120,140)" name="Pin">
+    <comp lib="0" loc="(110,140)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="A"/>
       <a name="radix" val="16"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(120,180)" name="Pin">
+    <comp lib="0" loc="(110,190)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="B"/>
       <a name="radix" val="16"/>
@@ -2901,15 +2912,17 @@
       <a name="incoming" val="32"/>
     </comp>
     <comp lib="0" loc="(890,370)" name="Splitter">
+      <a name="bit1" val="none"/>
+      <a name="bit2" val="none"/>
       <a name="facing" val="west"/>
       <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
+      <a name="incoming" val="3"/>
     </comp>
     <comp lib="0" loc="(940,390)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="north"/>
       <a name="label" val="Funct"/>
-      <a name="width" val="4"/>
+      <a name="width" val="3"/>
     </comp>
     <comp lib="1" loc="(160,190)" name="NOT Gate">
       <a name="size" val="20"/>
@@ -2927,8 +2940,8 @@
     <comp lib="2" loc="(210,180)" name="Multiplexer">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="2" loc="(960,240)" name="Multiplexer">
-      <a name="select" val="4"/>
+    <comp lib="2" loc="(960,200)" name="Multiplexer">
+      <a name="select" val="3"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="3" loc="(540,320)" name="Multiplier">
@@ -2936,10 +2949,10 @@
     </comp>
     <comp loc="(500,800)" name="Shifter_32_bits"/>
     <comp loc="(520,160)" name="Somador_32_bits"/>
-    <wire from="(120,140)" to="(270,140)"/>
-    <wire from="(120,170)" to="(120,180)"/>
+    <wire from="(110,140)" to="(270,140)"/>
+    <wire from="(110,190)" to="(120,190)"/>
+    <wire from="(120,170)" to="(120,190)"/>
     <wire from="(120,170)" to="(170,170)"/>
-    <wire from="(120,180)" to="(120,190)"/>
     <wire from="(120,190)" to="(140,190)"/>
     <wire from="(160,190)" to="(180,190)"/>
     <wire from="(170,170)" to="(170,850)"/>
@@ -3003,8 +3016,10 @@
     <wire from="(770,220)" to="(770,780)"/>
     <wire from="(770,220)" to="(920,220)"/>
     <wire from="(890,370)" to="(940,370)"/>
-    <wire from="(940,320)" to="(940,370)"/>
+    <wire from="(940,240)" to="(940,370)"/>
     <wire from="(940,370)" to="(940,390)"/>
-    <wire from="(960,240)" to="(1030,240)"/>
+    <wire from="(960,200)" to="(970,200)"/>
+    <wire from="(970,200)" to="(970,240)"/>
+    <wire from="(970,240)" to="(1030,240)"/>
   </circuit>
 </project>
