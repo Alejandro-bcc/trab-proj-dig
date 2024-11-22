@@ -3,3 +3,5 @@
 [Enunciado](trabPD.pdf) 
 
 [Programa em C para testes](testes.c)
+
+[Relatório](relatorio_trabalho_projetos.pdf)
